@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../static/DailyConsumptionRecord.css">
+</head>
+<body>
+<header>
+    <a class="logo" href="#" >Fitrac</a>
+    <nav>
+        <a class="navbar" href="#">Profile</a>
+        <a class="navbar" href="#">Today's Consumption</a>
+        <a class="navbar" href="#">Analysis</a>
+        <a class="navbar" href="#">Food Section</a>
+    </nav>
+</header>
+<div class="fill">
+
+<div class="Inbox">
+    <div class="Upperin">
+    <input type="text" id="un"  placeholder="Food" required><br>
+    <select id="amount">
+            <option id="op0" >Select a measure</option>
+            <option value="op1">In Grams</option>
+            <option value="op2">Per Serving</option>
+            <option value="op3">Per Quantity</option>
+            <!--here when a particular option is selected the input type must also be changed-->
+    </select>
+    <div class="addon">
+        <button id="add" type="submit" >+</button>
+    </div>
+    <div class="addon">
+        <button id="Done" type="submit" >Done</button>
+  </div>   <!--  upper in-->
+    </div>
+
+    <div class="line"></div>  <!--just a separation line-->
+
+    <main class="table">
+    <section class="tableheader">
+       <h1>Today's Consumption Table</h1>
+    <section class="tablebody">
+        <table>
+            <tbody>
+            <thead>
+            <tr>
+                <th>F_ID</th>
+                <th>NAME</th>
+                <th>KCAL</th>
+                <th>PROTEIN</th>
+                <th>CARB</th>
+                <th>SUGAR</th>
+                <th>FAT</th>
+                <th>FIBRE</th>
+                <th>WATER</th>
+                <th>CHOLESTEROL</th>
+                <th>MACRO-NUTRIENTS</th>
+                <th>AMOUNT</th>
+            </tr>
+            </thead>
+            <tr>
+                <td>1</td>
+                <td>chicken</td>
+                <td>157 </td>
+                <td>30 gm</td>
+                <td>0 gm</td>
+                <td>0 gm</td>
+                <td>4 gm</td>
+                <td>0 gm</td>
+                <td>65 gm</td>
+                <td>0.9 gm</td>
+                <td>35 mg</td>
+
+                <td>30-40 NRS per 100gm</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>chicken</td>
+                <td>157 </td>
+                <td>30 gm</td>
+                <td>0 gm</td>
+                <td>0 gm</td>
+                <td>4 gm</td>
+                <td>0 gm</td>
+                <td>65 gm</td>
+                <td>35 mg</td>
+                <td>0.9 gm</td>
+                <td>30-40 NRS per 100gm</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>chicken</td>
+                <td>157 </td>
+                <td>30 gm</td>
+                <td>0 gm</td>
+                <td>0 gm</td>
+                <td>4 gm</td>
+                <td>0 gm</td>
+                <td>65 gm</td>
+                <td>35 mg</td>
+                <td>0.9 gm</td>
+                <td>30-40 NRS per 100gm</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>chicken</td>
+                <td>157 </td>
+                <td>30 gm</td>
+                <td>0 gm</td>
+                <td>0 gm</td>
+                <td>4 gm</td>
+                <td>0 gm</td>
+                <td>65 gm</td>
+                <td>35 mg</td>
+                <td>0.9 gm</td>
+                <td>30-40 NRS per 100gm</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>chicken</td>
+                <td>157 </td>
+                <td>30 gm</td>
+                <td>0 gm</td>
+                <td>0 gm</td>
+                <td>4 gm</td>
+                <td>0 gm</td>
+                <td>65 gm</td>
+                <td>35 mg</td>
+                <td>0.9 gm</td>
+                <td>30-40 NRS per 100gm</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>chicken</td>
+                <td>157 </td>
+                <td>30 gm</td>
+                <td>0 gm</td>
+                <td>0 gm</td>
+                <td>4 gm</td>
+                <td>0 gm</td>
+                <td>65 gm</td>
+                <td>35 mg</td>
+                <td>0.9 gm</td>
+                <td>30-40 NRS per 100gm</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>chicken</td>
+                <td>157 </td>
+                <td>30 gm</td>
+                <td>0 gm</td>
+                <td>0 gm</td>
+                <td>4 gm</td>
+                <td>0 gm</td>
+                <td>65 gm</td>
+                <td>35 mg</td>
+                <td>0.9 gm</td>
+                <td>30-40 NRS per 100gm</td>
+            </tr>
+
+
+            </tbody>
+        </table>
+        </section>
+    </section>
+    </main>
+    <div class="line2"></div>
+
+</div>  <!--inbox close-->
+   <figure class="pie-chart">
+       <div class="slice protein" ></div>
+       <div class="slice" id="Carb"></div>
+       <div class="slice" id="Sugar"></div>
+       <div class="slice" id="fat"></div>
+       <div class="slice" id="fibre"></div>
+       <div class="slice" id="cholesterol"></div>
+   </figure>
+
+
+
+</div>  <!--fill close-->
+
+<footer>
+</footer>
+</body>
+</html>

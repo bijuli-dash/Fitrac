@@ -1,0 +1,258 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', snas-serif, serif;
+}
+
+body,html{
+    margin:0;
+    padding:0;
+    height:100%;
+    justify-content: center;
+        background-size: cover;
+        background: url(bg4.jpg) no-repeat center;
+        backdrop-filter: blur(3px);
+}
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    padding:20px 10%;
+    width:100%;
+    display:flex;
+    background-color: rgb(143, 142, 142);
+    justify-content: space-between;
+    align-items: center;
+    z-index:100;
+}
+.logo
+{
+    font-size:30px;
+    color: rgba(51, 47, 47, 0.98);
+    text-decoration:none;
+    font-weight:700;
+}
+
+nav a{
+    font-size:18px;
+    color: #464545;
+    text-decoration:none;
+    font-weight:600;
+    margin-left:30px;
+}
+nav a:hover
+{
+    background-color:transparent;
+    color: rgb(255, 253, 253);
+}
+.fill
+{
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    padding: 10px;
+    background:transparent;
+    z-index: -1;
+    overflow: auto;
+}
+.fill::-webkit-scrollbar-thumb{
+    border-radius: 5rem;
+    background-color: #0004;
+    visibility: hidden;
+}
+.fill::-webkit-scrollbar-thumb:hover{
+    visibility: visible;
+}
+
+.Inbox .Upperin{                  /*this is supposed to be the upper part*/
+    height:70px;
+    width:70%;
+    display:flex;
+    align-items: center;
+    background: transparent;
+    outline: none;
+    margin-top: 100px;
+    margin-left:14.5%;
+    padding :20px 30px 20px 10px ;
+}
+.Upperin select,input{
+    height:50px;
+    width:40%;
+    outline: none;
+    border: 1px solid rgb(215, 213, 213);
+    font-size:30px;
+    background-color:transparent;
+    color: #2f2f2f;
+}
+
+
+
+.Upperin input:hover
+{
+    background-color: #6c6b6b;
+    border:transparent;
+    color:white;
+}
+.Upperin Select:hover
+{
+    background-color: #6c6b6b;
+    border:transparent;
+    color:white;
+}
+
+.Upperin .addon                        /*button*/
+{
+    margin-left: 40px;
+    padding-right: 10px;
+    background-blend-mode: soft-light;
+}
+.addon #add,#Done{
+    width:100px;
+    height:50px;
+    border-radius:30px;
+    border:transparent;
+    background-color: rgb(202, 202, 202);
+    color:rgb(42, 42, 42);
+    font-size: 30px;
+}
+.addon #Done:hover
+{
+    background-color: #6c6b6b;
+    border:transparent;
+    color:white;
+}
+.addon #add:hover
+{
+    background-color: #6c6b6b;
+    border:transparent;
+    color:white;
+}
+
+
+.line                                    /*line*/
+{
+    display:block;
+    align-items: center;
+    width:80%;
+    margin-top:30px;
+    margin-left: 9.5%;
+    height:2px;
+    background-color: #eaeaea;
+    margin-bottom: 30px;
+}
+
+/*table*/
+.lower
+{
+    display:block;
+    align-items: center;
+    width:80%;
+    margin-top:40px;
+    margin-left: 9.5%;
+    height:500px;
+    background-color: #eaeaea;
+    overflow:auto;
+}
+
+main.table{
+    width:95%;
+    height:300px;
+    margin-left:2.54%;
+    background-color: rgba(204, 184, 184, 0.29);
+    backdrop-filter: blur(3px);
+    border-radius:10px;
+    overflow: hidden;
+
+}
+.tableheader{
+    width:100%;
+    height:15%;
+    background-color: rgba(141, 141, 141, 0.58);
+    padding:5px 30px;
+}
+.tablebody{
+    text-align: left;
+    width:100%;
+    max-height:278px;
+    border-radius:10px;
+    margin-top: 20px;
+    margin-bottom:20px;
+    background-color: rgba(63, 48, 48, 0.32);
+    overflow:auto;
+
+}
+
+.tablebody::-webkit-scrollbar{
+    width: .5rem;
+    height: .5rem;
+}
+.tablebody::-webkit-scrollbar-thumb{
+    border-radius: 5rem;
+    background-color: #0004;
+    visibility: hidden;
+}
+.tablebody::-webkit-scrollbar-thumb:hover{
+    visibility: visible;
+}
+thead th{
+    position:Sticky;
+    top:0;
+    left:0;
+    background-color: rgba(204, 194, 194, 0.7);
+}
+
+table, th, td{
+    font-size:18px ;
+    border-collapse: collapse;
+    padding:8px;
+}
+tbody tr:nth-child(even){
+    background-color: rgba(210, 191, 191, 0.11);
+}
+
+@media (max-width: 4000px) {
+    td:not(:first-of-type){
+        min-width: 5.8rem;
+    }
+}
+.line2                                    /*line*/
+{
+    display:block;
+    align-items: center;
+    width:80%;
+    margin-top:30px;
+    margin-left: 9.5%;
+    height:2px;
+    background-color: #eaeaea;
+    margin-bottom: 30px;
+}
+
+.pie-chart{
+  position:relative;
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    transform: rotate(-90deg);
+    background-color: #ccc;
+}
+
+.slice{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    clip:rect(0, 100px, 200px, 0) ;
+}
+
+.Protein{
+    background-color: cornflowerblue;
+    transform: rotate(10deg);
+}
+
+
+
+
+

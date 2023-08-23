@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="/static/registration.css">
+</head>
+<body>
+<div class="regs">
+    <form method="POST" action="/register" >
+        <h1>Register</h1>
+        <div class="box">
+            <input type="text" id="N" placeholder="Choose a Username"  required autofocus> <br>
+        </div>
+        <div class="box">
+            <input type="number" id="age" placeholder="Age"  required autofocus><br>
+        </div>
+        <div class="box">
+
+            <input type="password" id = "PW" placeholder="Password" minlength = "8"  required autofocus><br>
+        </div>
+        <div class="box">
+
+            <input type="number" id = "height" placeholder="Height in m"  required autofocus><br>
+        </div>
+        <div class="box">
+            <input type="number" id = "weight" placeholder="Weight" required autofocus><br>
+        </div>
+        <div class="rad">
+            <div class="sel">
+
+                <select id="gender"  required autofocus>
+                    <option value="Gender">Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select><br>
+            </div>
+        </div>
+        <div class="rad">
+            <div class="sel">
+
+                <select id="goal">
+                    <option value="Gender">Goal</option>
+                    <option value="Male">Fitness</option>
+                    <option value="Female">Weight Gain</option>
+                    <option value="Female">Weight Loss</option>
+                    <option value="Female">Body Recomposition</option>
+                </select><br>
+            </div>
+        </div>
+        <div class="rad">
+            <div class="sel">
+
+                <select id="Healthconditions">
+                    <option value="Gender">Health Conditions</option>
+                    <option value="Male">Cardiovascular Diseases</option>
+                    <option value="Female">Diabetes</option>
+                    <option value="Female">Hypertension</option>
+                    <option value="Female">Gastrointestinal Disorder</option>
+                    <option value="Female">Celiac Diseases</option>
+                    <option value="Female">Chronic Kidney Disease</option>
+                    <option value="Female">more..</option>
+                </select><br>
+            </div>
+        </div>
+        <div class="regbtn">
+            <button id="reg" type="submit">Register</button>
+            <a href="Homepage.html" >register.</a>
+        </div>
+    </form>
+</div>
+</body>
+</html>
